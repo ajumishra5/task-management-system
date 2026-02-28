@@ -1,0 +1,28 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card bg-dark text-white text-center p-3">
+            <h4>{{ total }}</h4>
+            <p>Total Tasks</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-warning text-white text-center p-3">
+            <h4>{{ pending }}</h4>
+            <p>Pending Tasks</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card bg-success text-white text-center p-3">
+            <h4>{{ completed }}</h4>
+            <p>Completed Tasks</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
